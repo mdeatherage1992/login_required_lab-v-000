@@ -4,8 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def current_user
-   if !session[:user] == nil
-     session[:user]
+   if !params[:user] == nil
+     session[:user] = params[:user]
    else
      nil
   end
