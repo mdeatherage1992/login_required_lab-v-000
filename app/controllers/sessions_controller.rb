@@ -12,3 +12,5 @@ class SessionsController < ApplicationController
     session.delete :name
     redirect_to controller: 'application', action: 'hello'
   end
+
+end
